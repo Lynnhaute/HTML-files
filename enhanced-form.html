@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8"/>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title> Enhanced HTML5 Content & Forms</title>
+        <style> 
+            body {
+                font-family: Arial, Lucida Sans;
+                line-height: 1.5;
+                margin: 20px;
+                background-color: rgb(190, 225, 141);
+                }
+                header, main, footer {
+                    margin-bottom: 20px;
+                    background-color: antiquewhite;
+                    
+                }
+                header h1 {
+                text-align: center;
+            color: #09a0e7;
+                }
+                section {
+                    background-color: #77b4ae;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 2px 5px rosybrown(0,0,0,0,1);
+                }
+                form {
+                    display: grid;
+                    gap: 15px;
+                }
+                label {
+                    display: grid;
+                    gap: 15px;
+                }
+                label  {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                input, select, textarea, button {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 10px;
+                }
+                th,td {
+                  padding: 10px;
+                  border: solid #ccc;
+                  text-align: left;  
+                }
+                footer {
+                    text-align: center;
+                    font-size: 0.9cm;
+                    color: #555;
+                }
+                </style>
+    </head>
+        <body>
+            <header>
+                <h1>
+                    THE ENHANCED HTML5 FORM EXAMPLE</h1>
+                    <p>This page shows a well sturctued layout with semantic tags, lists, tables, media and a form.</p>
+            </header>
+            <main>
+            <!--Media section-->
+            <section>
+<h2>Media Showing</h2>
+<figure>
+    <img src="pexels-bengi-2152186012-33703848.jpg/400x200" alt="breakfast coffee"/>
+    <figcaption>
+        A sample image included in the document.</figcaption>
+</figure>
+<video width="400" controls>
+    <source src="lovelycouple.mp4" type="video/mp4">
+    Your browser does not support video playback.
+</video>
+            </section>
+
+            <!--List section-->
+            <section>
+                <h2>Key Features of This Form are:</h2>
+                <ul>
+                    <li>Various types of input with validation</li>
+                    <li>Media integration</li>
+                    <li> Responsive table layout</li>
+                    <li>Semantic structure for easy accessibility</li>
+                    </ul>
+                 </section>
+
+                 <!--Table Section-->
+                 <section>
+                    <h2> Available Memmbership plans</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Benefits</th>
+                                <th>Pricing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                        <td>Basic</td>
+                        <td>Access to resources</td>
+                        <td>$5/month</td>
+                    </tr>
+                    <tr>
+                       <td>Prenium services</td>
+                        <td>Resources + events</td>
+                        <td>$20 per month</td>
+                        </tr>
+                        </tbody>
+                     </table>
+                 </section>
+
+                 <!--Form Section-->
+                 <section>
+                <h2> REGISTERATION FORM</h2>
+                <form action="#" method="post" autocomplete="on">
+                    <div>
+                       <label for="Fullname">Full Name:></label>
+                        <input type="text" id="fullname" name="Fullname" placeholder="Enter your full name" required>
+                    </div>  
+                    <div>
+                         <label for="email">Email Address:></label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email">
+                    </div>  
+                    <div>
+                        <label for="password"> Create Password;</label>
+                        <input type="password"id="password" name="password" placeholder="Choose a password" required minlenght="6">
+                     </div>
+
+                     <div>
+                        <label for="DOB"> Date of Birth</label>
+                        <input type="date" id="DOb" required>
+                     </div>
+
+                     <div>
+                       <label for="phone"> Phone Number:</label> 
+                       <input type="tel" id="phone" placeholder="+23480100000" pattern="^\+?[0-9\s\-]{7,10}$" required> 
+                    </div>
+
+                    <div>
+                        <label for="Plan"> Select membership Plan:</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">-- Choose a plan --</option>
+                            <option value="basic">Basic</option>
+                            <option value="prenium">Prenium</option>
+                            <option value="pro">Pro</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Write your message here..."></textarea>
+                        </div>
+
+                     <div>
+                         <label for="referral">Referral Code (readonly):</label>
+                        <input type="text" id="referral" name="referral" value="REF1234" readonly>
+                    </div>
+
+                    <fieldset>
+                        <legend>Preferred Contact Method:</legend>
+                        <label><input type="radio" name="contact_method" value="email" required> Email</label>
+                        <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+                     </fieldset>
+
+                     <fieldset>
+                         <legend>Subscribe to:</legend>
+                         <label><input type="checkbox" name="updates" value="news"> News Updates</label>
+                        <label><input type="checkbox" name="updates" value="events"> Event Notifications</label>
+                        <label><input type="checkbox" name="updates" value="offers"> Special Offers</label>
+                    </fieldset>
+
+                     <div>
+                         <button type="submit">Submit</button>
+                         <button type="reset">Reset</button>
+                     </div>
+                  </form>
+                 </section>
+                </main>
+                </body>
+                git remote add origin https://github.com/Lynnhaute/HTML-files.git
