@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8"/>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title> Enhanced HTML5 Content & Form</title>
+    </head>
+        <body>
+            <header>
+                <h1>
+                    THE ENHANCED HTML5 FORM EXAMPLE</h1>
+                    <p>This page shows a well sturctued layout with semantic tags, lists, tables, media and a form.</p>
+            </header>
+            <main>
+
+            <!--Media section-->
+
+            <section>
+<h2>Media Content</h2>
+<figure>
+<video width="400" controls>
+    <source src="lovelycouple.mp4" type="video/mp4">
+    Your browser does not support video playback.
+</video>
+<figcaption> A video sample embedded using HTML5</figcaption>
+</figure>
+ <ul>
+                <li>Your Bio-data.</li>
+                <li>Available Membership Plan.</li>
+                <li>Registration Form.</li>
+                <li>Preferred Contact Method.</li>
+                <li>Subscribe to.</li>
+            </ul>
+            </section>
+
+                 <!--Table Section-->
+                 <section>
+                    <h2> Available Memmbership plans</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Benefits</th>
+                                <th>Pricing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                        <td>Basic</td>
+                        <td>Access to resources</td>
+                        <td>$5/month</td>
+                    </tr>
+                    <tr>
+                       <td>Prenium services</td>
+                        <td>Resources</td>
+                        <td>$20 per month</td>
+                    </tr>
+                        </tbody>
+                     </table>
+                 </section>
+
+                 <!--Form Section-->
+                 <section>
+                <h2> REGISTERATION FORM</h2>
+                <form action="/submit" method="post" autocomplete="on">
+                   
+                    <div>
+                       <label for="Fullname">Full Name:></label>
+                        <input type="text" id="fullname" name="Fullname" placeholder="Enter your full name" required>
+                    </div>  
+                   
+                    <div>
+                         <label for="email">Email Address:></label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email">
+                    </div>  
+                   
+                    <div>
+                        <label for="password"> Create Password;</label>
+                        <input type="password"id="password" name="password" placeholder="Choose a password" required minlenght="6">
+                     </div>
+
+                     <div>
+                        <label for="DOB"> Date of Birth</label>
+                        <input type="date" id="DOb" required>
+                     <br> </div> 
+                    </div>
+
+                    <div>
+                        <label for="Plan"> Select membership Plan:</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">-- Choose a plan --</option>
+                            <option value="basic">Basic</option>
+                            <option value="prenium">Prenium</option>
+                            <option value="pro">Pro</option>
+                        </select>
+
+                    </div>
+                    <fieldset>
+                        <legend>Preferred Contact Method:</legend>
+                        <label><input type="radio" name="contact_method" value="email" required> Email</label>
+                        <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+                     </fieldset>
+
+                     <fieldset>
+                         <legend>Subscribe to:</legend>
+                         <label><input type="checkbox" name="updates" value="news"> News Updates</label>
+                        <label><input type="checkbox" name="updates" value="events"> Event Notifications</label>
+                        <label><input type="checkbox" name="updates" value="offers"> Special Offers</label>
+                    </fieldset>
+
+                     <div>
+                         <button type="submit">Submit</button>
+                         <button type="reset">Reset</button>
+                     </div>
+                  </form>
+                 </section>
+                </main>
+            </body>
+</html>
